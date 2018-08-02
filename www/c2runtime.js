@@ -15089,7 +15089,6 @@ cr.system_object.prototype.loadFromJSON = function (o)
 		{
 			clonesol.select_all = false;
 			cr.shallowAssignArray(clonesol.instances, prevsol.instances);
-			cr.shallowAssignArray(clonesol.else_instances, prevsol.else_instances);
 		}
 	};
 	cr.type_popSol = function ()
@@ -26337,17 +26336,17 @@ cr.behaviors.scrollto = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Touch,
+	cr.plugins_.admob,
+	cr.plugins_.Browser,
+	cr.plugins_.Audio,
+	cr.plugins_.Function,
+	cr.plugins_.Keyboard,
+	cr.plugins_.Particles,
 	cr.plugins_.TiledBg,
+	cr.plugins_.WebStorage,
 	cr.plugins_.Sprite,
 	cr.plugins_.Spritefont2,
-	cr.plugins_.WebStorage,
-	cr.plugins_.admob,
-	cr.plugins_.Audio,
-	cr.plugins_.Browser,
-	cr.plugins_.Keyboard,
-	cr.plugins_.Function,
-	cr.plugins_.Particles,
+	cr.plugins_.Touch,
 	cr.behaviors.Sin,
 	cr.behaviors.Fade,
 	cr.behaviors.lunarray_LiteTween,
